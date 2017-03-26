@@ -1,1 +1,61 @@
-<div class="modal-body"><form action="/" accept-charset="utf-8" method="post" class="form"><div class="row"><div class="col-sm-6 col-md-8 col-lg-8"><div class="form-group"><input id="Password2" type="text" class="form-control"/><label for="Firstname2">Наименование заявки</label></div><div class="form-group"><textarea id="textarea1" name="textarea1" rows="3" placeholder="" class="form-control"></textarea><label for="textarea1">Описание заявки</label></div><div class="col-sm-12 col-lg-6"><div class="form-group control-width-normal"><div id="demo-date" class="input-group date"><div class="input-group-content"><input type="text" class="form-control"/><label>Срок окончания приема заявок</label></div><span class="input-group-addon"><i class="fa fa-calendar"></i></span></div></div></div><div class="col-sm-12 col-lg-6"><div class="form-group"><div class="dz-message"><h3><i class="gsnab gsnab-141965"></i>Загрузить документы</h3><em> </em></div></div></div></div><div class="col-sm-6 col-md-4 col-lg-4"><!-- <a href="#ofcl__contact" data-toggle="offcanvas" class="btn btn-lbls btn-lbls__fixed-width"><i class="gsnab gsnab-236691"></i>Добавить вручную</a>--><a href="#ofcl__add" data-toggle="offcanvas" class="btn btn-lbls"><i class="gsnab gsnab-128747"></i>Добавить файл c данными</a><a href="#ofcl__addmanual" data-toggle="offcanvas" class="btn btn-lbls"><i class="gsnab gsnab-37404"></i>Добавить вручную</a><!-- <button class="btn btn-lbls btn-lbls__fixed-width"><i class="gsnab gsnab-197116"></i>Добавить документацию</button>--></div></div><!-- .row--><div class="row"><div class="col-sm-12"><div class="form-group"><button type="submit" class="btn btn-info">Сформировать заявку</button></div></div></div></form></div><div class="modal-dialog zayavka"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-icon-toggle btn-close ink-reaction"><i class="md md-close"></i></button><header>Новая потребность</header></div><div class="modal-footer"><button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-primary">Закрыть</button></div></div></div>
+
+<div class="modal-body">
+  <form action="/" accept-charset="utf-8" method="post" class="form">
+    <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-8">
+        <div class="form-group">
+          <input id="Password2" type="text" class="form-control"/>
+          <label for="Firstname2">Наименование заявки</label>
+        </div>
+        <div class="form-group">
+          <textarea id="textarea1" name="textarea1" rows="3" placeholder="" class="form-control"></textarea>
+          <label for="textarea1">Описание заявки</label>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="form-group control-width-normal">
+            <div id="demo-date" class="input-group date">
+              <div class="input-group-content">
+                <input type="text" class="form-control"/>
+                <label>Срок окончания приема заявок</label>
+              </div><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="form-group">
+            <div class="dz-message">
+              <h3><i class="gsnab gsnab-141965"></i>Загрузить документы</h3><em> </em>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <!-- <a href="#ofcl__contact" data-toggle="offcanvas" class="btn btn-lbls btn-lbls__fixed-width"><i class="gsnab gsnab-236691"></i>Добавить вручную</a>--><a href="#ofcl__add" data-toggle="offcanvas" class="btn btn-lbls"><i class="gsnab gsnab-128747"></i>Добавить файл c данными</a><a href="#ofcl__addmanual" data-toggle="offcanvas" class="btn btn-lbls"><i class="gsnab gsnab-37404"></i>Добавить вручную</a>
+        <!-- <button class="btn btn-lbls btn-lbls__fixed-width"><i class="gsnab gsnab-197116"></i>Добавить документацию</button>-->
+      </div>
+    </div>
+    <!-- .row-->
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <button type="submit" class="btn btn-info">Сформировать заявку</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-dialog zayavka">
+  <div class="modal-content">
+    <div class="modal-header"><a data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-original-title="Закрыть заявку" class="btn btn-icon-toggle btn-close ink-reaction"><i class="zmdi zmdi-close"></i></a><a href="#" data-toggle="dropdown" class="btn btn-icon-toggle dropdown-toggle btn-actions"><i class="fa fa-bars"></i></a>
+      <ul role="menu" class="dropdown-menu dropdown-menu-right animation-dock">
+        <li><a href="#">Редактировать заявку</a></li>
+        <li><a href="#">Удалить заявку</a></li>
+        <li><a href="#">Отозвать заявку</a></li>
+      </ul>
+      <header>Новая потребность</header>
+    </div>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-primary">Закрыть</button>
+    </div>
+  </div>
+</div>

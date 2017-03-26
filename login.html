@@ -1,9 +1,277 @@
-<!DOCTYPE html><html lang="ru-RU" class="no-js aui"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Авторизация +PLUSSEL - торговая система</title><meta name="description" content="электронная рабочая система для автоматизации и контроля торгово-закупочных процессов предприятий."><meta name="keywords" content="продажи, b2b"><link type="text/css" href="css/alls.css" rel="stylesheet"><link rel="shortcut icon" href="img/favicon.ico"><link rel="icon" type="image/gif" href="img/animated_favicon1.gif"></head><body class="login"><!-- BEGIN LOGIN SECTION ACCOUNT--><section class="section-account"><div style="background-image: url('img/logo_name2.svg')" class="img-logo-name"></div><div class="img-backdrop"></div><div class="spacer"></div><div class="card contain-sm style-login"><div class="card-body"><div class="row"><div class="col-sm-6"><span class="text-lg text-bold text-primary">Войдите в личный кабинет</span><form novalidate="novalidate" action="index.html" accept-charset="utf-8" class="form form-validate"><div class="form-group"><input id="username" type="text" name="username" class="form-control"><label for="username">Логин</label></div><div class="form-group pwd"><input id="password" type="password" name="password" required="" data-rule-minlength="5" class="form-control"><label for="password">Пароль</label><span class="btn glyphicon glyphicon-eye-open"></span><p class="help-block"><a data-toggle="modal" href="#logregModal" class="showtab">Забыли пароль?</a></p></div><br><div class="row"><div class="col-xs-6 text-left"><div class="checkbox checkbox-inline checkbox-styled"><label><input type="checkbox"><span>Запомнить меня</span></label></div></div><!-- end .col--><div class="col-xs-6 text-right"><button type="submit" class="btn btn-info ink-reaction">Войти</button></div><!-- end .col--></div><!-- end .row--></form></div><!-- end .col--><div class="col-sm-5 col-sm-offset-1 text-center"><h4 class="text-light">Нет аккаунта?</h4><a data-toggle="modal" href="#logregModal" class="btn ink-reaction btn-primary-light btn-lg ink-reaction btn-lg">Зарегистрироваться!</a></div><!-- end .col--></div><!-- end .row--></div><!-- end .card-body--></div><!-- end .card--></section><!-- END LOGIN SECTION ACCOUNT--><!-- BEGIN FORM MODAL MARKUP--><div id="logregModal" tabindex="-1" data-width="760" class="modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></button><ul data-toggle="tabs" class="nav nav-tabs tabs-center tabs-text-contrast tabs-accent-light"><li class="active"><a href="#reg">Регистрация</a></li><li><a href="#login">Войти в систему</a></li></ul></div><div class="modal-body"><div class="tab-content"><div id="reg" class="tab-pane active"><form novalidate="novalidate" class="form form-validate"><div class="row"><div class="col-sm-4"><div class="form-group"><input id="Email" type="email" name="Email" required="" class="form-control email"><label for="Email">E-mail</label></div></div><div class="col-sm-4"><div class="form-group"><select id="select1" name="select1" required="" class="form-control"><option value="ООО">ООО</option><option value="ЗАО">ЗАО</option><option value="ОАО">ОАО</option><option value="ИП">ИП</option><option value="ТОО">ТОО</option><option value="ФГУП">ФГУП</option><option value="АО">АО</option><option value="ЧП">ЧП</option></select><label for="select1">Правовая форма</label></div></div><div class="col-sm-4"><div class="form-group"><input id="Firstname2" type="text" required="" data-rule-minlength="2" class="form-control"><label for="Firstname2">Название компании</label></div></div></div><div class="row"><div class="col-sm-6"><div class="form-group pwd"><input id="Password1" type="password" name="Password1" required="" data-rule-minlength="5" class="form-control"><span class="btn glyphicon glyphicon-eye-open"></span><label for="Password1">Пароль</label></div></div><div class="col-sm-6"><div class="form-group pwd"><input id="Password2" type="password" name="Password2" required="" data-rule-minlength="5" equalto="#Password1" class="form-control"><span class="btn glyphicon glyphicon-eye-open"></span><label for="Password2">Пароль еще раз </label></div></div></div><!-- .row--><div class="row"><div class="col-sm-4"><div class="form-group"><input id="region" type="text" name="region" required="" class="form-control"><label for="region">Регион</label></div></div><div class="col-sm-4"><div class="form-group"><input id="city" type="text" name="city" required="" class="form-control"><label for="city">Город</label></div></div><div class="col-sm-2"><div class="form-group"><input id="city" type="text" name="street" required="" class="form-control"><label for="street">Улица</label></div></div><div class="col-sm-2"><div class="form-group"><input id="city" type="text" name="building" required="" class="form-control"><label for="building">Дом</label></div></div></div><!-- .row--><div class="row"><div class="col-sm-4"><div class="form-group"><input id="Name" type="text" name="Name" required="" class="form-control"><label for="Name">Имя представителя</label></div></div><div class="col-sm-4"><div class="form-group"><input id="Surname" type="text" name="Surname" required="" class="form-control"><label for="Surname">Фамилия представителя</label></div></div><div class="col-sm-4"><div class="form-group"><input id="tel" type="text" name="tel" data-inputmask="'mask': '(999) 999-9999'" class="form-control"><label for="tel">Телефон</label><p class="help-block">(987) 250-7461</p></div></div></div><!-- .row--><!--<div class="form-group control-width-normal">
-<div class="input-group date" id="demo-date">
-<div class="input-group-content">
-<input type="text" class="form-control">
-<label>Дата</label>
-</div>
-<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-</div>
-</div>--><!-- end .form-group--><!-- <button type="submit" class="btn btn-flat btn-primary">Validate</button>--><br><div class="row"><div class="col-xs-12 col-md-5 text-center"><button type="submit" disabled="disabled" class="btn btn-info ink-reaction">Зарегистрироваться</button></div><!-- end .col--><div class="col-xs-12 col-md-7 text-center"><div class="checkbox checkbox-styled checkbox-success"><label><input type="checkbox" name="terms1" required="" checked=""><span>Согласен с <a href="#login">пользовательским соглашением</a></span></label></div></div><!-- end .col--></div><!-- end .row--></form></div><!-- end reg--><div id="login" class="tab-pane"><form novalidate="novalidate" action="/" accept-charset="utf-8" class="form form-validate"><div class="row"><div class="col-sm-12"><div class="form-group"><input id="username" type="text" name="username" class="form-control"><label for="username">Логин</label></div></div><div class="col-sm-12"><div class="form-group pwd"><input id="password" type="password" name="password" required="" data-rule-minlength="2" class="form-control"><label for="password">Пароль</label><span class="btn glyphicon glyphicon-eye-open"></span><p class="help-block"><a href="#reset" class="showtab">Забыли пароль?</a></p></div></div></div><div class="row"><div class="col-xs-12 col-lg-2 text-center"><button type="submit" class="btn btn-info">Войти</button></div><!-- end .col--><div class="col-xs-12 col-lg-10 text-center"><div class="checkbox checkbox-inline checkbox-styled"><label><input type="checkbox"><span>Запомнить меня</span></label></div></div><!-- end .col--></div><!-- end .row--></form></div><!-- end login--><div id="reset" class="tab-pane"><form action="/" accept-charset="utf-8" method="post" class="form"><div class="form-group floating-label"><input id="Email" type="email" name="Email" required="" class="form-control email"><label for="Email">Введите ваш адрес электронной почты указанный при регистрации</label></div><div class="row"><div class="col-xs-12 col-md-12 text-center"><div class="form-horizontal"><button type="submit" class="btn btn-info">Сбросить пароль</button><a href="#login" class="btn btn-default showtab">Вернуться</a></div></div><!-- end .col--><div class="col-xs-12 col-md-9 text-left"></div><!-- end .col--></div><!-- end .row--></form></div><!-- end reset--></div><!-- end .tab-content--></div></div><!-- /.modal-content--></div><!-- /.modal-dialog--></div><!-- /.modal--><!-- END FORM MODAL MARKUP--><!--BEGIN footer--><footer><div class="in"></div></footer><!--END footer--></body><!--END wrapper--><script src="js/vendors.js"></script><script src="js/mocha.js"></script></html>
+<!DOCTYPE html>
+<html lang="ru-RU" class="no-js aui">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Авторизация +PLUSSEL - торговая система</title>
+    <meta name="description" content="электронная рабочая система для автоматизации и контроля торгово-закупочных процессов предприятий.">
+    <meta name="keywords" content="продажи, b2b">
+    <link type="text/css" href="css/alls.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="icon" type="image/gif" href="img/animated_favicon1.gif">
+  </head>
+  <body class="login">
+    <!-- BEGIN LOGIN SECTION ACCOUNT-->
+    <section class="section-account">
+      <div style="background-image: url('img/logo_name2.svg')" class="img-logo-name"></div>
+      <div class="img-backdrop"></div>
+      <div class="spacer"></div>
+      <div class="card contain-sm style-login">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-6"><span class="text-lg text-bold text-primary">Войдите в личный кабинет</span>
+              <form novalidate="novalidate" action="index.html" accept-charset="utf-8" class="form form-validate">
+                <div class="form-group">
+                  <input id="username" type="text" name="username" class="form-control">
+                  <label for="username">Логин</label>
+                </div>
+                <div class="form-group pwd">
+                  <input id="password" type="password" name="password" required="" data-rule-minlength="5" class="form-control">
+                  <label for="password">Пароль</label><span class="btn glyphicon glyphicon-eye-open"></span>
+                  <p class="help-block"><a data-toggle="modal" href="#logregModal" class="showtab">Забыли пароль?</a></p>
+                </div><br>
+                <div class="row">
+                  <div class="col-xs-6 text-left">
+                    <div class="checkbox checkbox-inline checkbox-styled">
+                      <label>
+                        <input type="checkbox"><span>Запомнить меня</span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- end .col-->
+                  <div class="col-xs-6 text-right">
+                    <button type="submit" class="btn btn-info ink-reaction">Войти</button>
+                  </div>
+                  <!-- end .col-->
+                </div>
+                <!-- end .row-->
+              </form>
+            </div>
+            <!-- end .col-->
+            <div class="col-sm-5 col-sm-offset-1 text-center">
+              <h4 class="text-light">Нет аккаунта?</h4><a data-toggle="modal" href="#logregModal" class="btn ink-reaction btn-primary-light btn-lg ink-reaction btn-lg">Зарегистрироваться!</a>
+            </div>
+            <!-- end .col-->
+          </div>
+          <!-- end .row-->
+        </div>
+        <!-- end .card-body-->
+      </div>
+      <!-- end .card-->
+    </section>
+    <!-- END LOGIN SECTION ACCOUNT-->
+    <!-- BEGIN FORM MODAL MARKUP-->
+    <div id="logregModal" tabindex="-1" data-width="760" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-icon-toggle btn-close"><i class="zmdi zmdi-close"></i></button>
+            <ul data-toggle="tabs" class="nav nav-tabs tabs-center tabs-text-contrast tabs-accent-light">
+              <li class="active"><a href="#reg">Регистрация</a></li>
+              <li><a href="#login">Войти в систему</a></li>
+            </ul>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+              <div id="reg" class="tab-pane active">
+                <form novalidate="novalidate" class="form form-validate">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="Email" type="email" name="Email" required="" class="form-control email">
+                        <label for="Email">E-mail</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <select id="select1" name="select1" required="" class="form-control">
+                          <option value="ООО">ООО</option>
+                          <option value="ЗАО">ЗАО</option>
+                          <option value="ОАО">ОАО</option>
+                          <option value="ИП">ИП</option>
+                          <option value="ТОО">ТОО</option>
+                          <option value="ФГУП">ФГУП</option>
+                          <option value="АО">АО</option>
+                          <option value="ЧП">ЧП</option>
+                        </select>
+                        <label for="select1">Правовая форма</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="Firstname2" type="text" required="" data-rule-minlength="2" class="form-control">
+                        <label for="Firstname2">Название компании</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group pwd">
+                        <input id="Password1" type="password" name="Password1" required="" data-rule-minlength="5" class="form-control"><span class="btn glyphicon glyphicon-eye-open"></span>
+                        <label for="Password1">Пароль</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group pwd">
+                        <input id="Password2" type="password" name="Password2" required="" data-rule-minlength="5" equalto="#Password1" class="form-control"><span class="btn glyphicon glyphicon-eye-open"></span>
+                        <label for="Password2">Пароль еще раз </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .row-->
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="region" type="text" name="region" required="" class="form-control">
+                        <label for="region">Регион</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="city" type="text" name="city" required="" class="form-control">
+                        <label for="city">Город</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <input id="city" type="text" name="street" required="" class="form-control">
+                        <label for="street">Улица</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <input id="city" type="text" name="building" required="" class="form-control">
+                        <label for="building">Дом</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .row-->
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="Name" type="text" name="Name" required="" class="form-control">
+                        <label for="Name">Имя представителя</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="Surname" type="text" name="Surname" required="" class="form-control">
+                        <label for="Surname">Фамилия представителя</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <input id="tel" type="text" name="tel" data-inputmask="'mask': '(999) 999-9999'" class="form-control">
+                        <label for="tel">Телефон</label>
+                        <p class="help-block">(987) 250-7461</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .row-->
+                  <!--
+                  <div class="form-group control-width-normal">
+                  <div class="input-group date" id="demo-date">
+                  <div class="input-group-content">
+                  <input type="text" class="form-control">
+                  <label>Дата</label>
+                  </div>
+                  <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                  </div>
+                  </div>
+                  -->
+                  <!-- end .form-group-->
+                  <!-- <button type="submit" class="btn btn-flat btn-primary">Validate</button>--><br>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-5 text-center">
+                      <button type="submit" disabled="disabled" class="btn btn-info ink-reaction">Зарегистрироваться</button>
+                    </div>
+                    <!-- end .col-->
+                    <div class="col-xs-12 col-md-7 text-center">
+                      <div class="checkbox checkbox-styled checkbox-success">
+                        <label>
+                          <input type="checkbox" name="terms1" required="" checked=""><span>Согласен с <a href="#login">пользовательским соглашением</a></span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- end .col-->
+                  </div>
+                  <!-- end .row-->
+                </form>
+              </div>
+              <!-- end reg-->
+              <div id="login" class="tab-pane">
+                <form novalidate="novalidate" action="/" accept-charset="utf-8" class="form form-validate">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <input id="username" type="text" name="username" class="form-control">
+                        <label for="username">Логин</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group pwd">
+                        <input id="password" type="password" name="password" required="" data-rule-minlength="2" class="form-control">
+                        <label for="password">Пароль</label><span class="btn glyphicon glyphicon-eye-open"></span>
+                        <p class="help-block"><a href="#reset" class="showtab">Забыли пароль?</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-2 text-center">
+                      <button type="submit" class="btn btn-info">Войти</button>
+                    </div>
+                    <!-- end .col-->
+                    <div class="col-xs-12 col-lg-10 text-center">
+                      <div class="checkbox checkbox-inline checkbox-styled">
+                        <label>
+                          <input type="checkbox"><span>Запомнить меня</span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- end .col-->
+                  </div>
+                  <!-- end .row-->
+                </form>
+              </div>
+              <!-- end login-->
+              <div id="reset" class="tab-pane">
+                <form action="/" accept-charset="utf-8" method="post" class="form">
+                  <div class="form-group floating-label">
+                    <input id="Email" type="email" name="Email" required="" class="form-control email">
+                    <label for="Email">Введите ваш адрес электронной почты указанный при регистрации</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12 text-center">
+                      <div class="form-horizontal">
+                        <button type="submit" class="btn btn-info">Сбросить пароль</button><a href="#login" class="btn btn-default showtab">Вернуться</a>
+                      </div>
+                    </div>
+                    <!-- end .col-->
+                    <div class="col-xs-12 col-md-9 text-left"></div>
+                    <!-- end .col-->
+                  </div>
+                  <!-- end .row-->
+                </form>
+              </div>
+              <!-- end reset-->
+            </div>
+            <!-- end .tab-content-->
+          </div>
+        </div>
+        <!-- /.modal-content-->
+      </div>
+      <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+    <!-- END FORM MODAL MARKUP-->
+    <!--BEGIN footer-->
+    <footer>
+      <div class="in"></div>
+    </footer>
+    <!--END footer-->
+  </body>
+  <!--END wrapper-->
+  <script src="js/vendors.js"></script>
+  <script src="js/mocha.js"></script>
+</html>
