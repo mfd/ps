@@ -1711,10 +1711,10 @@ p.removeScroller = function (holder) {
 				"exclude": [ 0 ],
 			},
 			"tableTools": {
-				"sSwfPath": "/js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
+				"sSwfPath": "js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
 			},
       "language": {
-          "url": "/data/dt_russian.json",
+          "url": "data/dt_russian.json",
       },
 	    "fnCreatedRow": function(nRow,aData,iDataIndex ) {
 				$(nRow).children("td:eq(0)").addClass('t_idx')
@@ -1834,7 +1834,7 @@ p.removeScroller = function (holder) {
 				"exclude": [ 0 ],
 			},
 			"tableTools": {
-				"sSwfPath": "/js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
+				"sSwfPath": "js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
 			},
       "language": {
           "url": "/data/dt_russian.json",
@@ -1936,7 +1936,7 @@ p._profile_userlist = function() {
 				//{"data": "salary"}
 			],
 			"tableTools": {
-				"sSwfPath": "/js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
+				"sSwfPath": "js/libs/DataTables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
 			},
 			"order": [[1, 'asc']],
 			"language": {
@@ -3308,64 +3308,39 @@ p._profile_userlist = function() {
 			  text: "Я проверил всю заявку и хочу отправить предложения",
 	      html: `
            <ul class="list-material message-list" id="list_u">
-              <li class="has-action-left has-action-right message-list__users"><a href="#m0" data-message-id="0" data-type="checkbox" class="visible">
-                  <div class="list-action-left"><img src="/img/avatar6.jpg" alt="Арслан Мубаряков" class="face-radius"/></div>
-                  <div class="list-content"><span class="title">Арслан Мубаряков</span><span class="caption">ООО «Универсалстрой»</span></div>
-                  <div class="list-action-right"><span class="top"> 
-                      <div class="checkbox checkbox-styled tile-text">
-                        <label>
-                          <input type="checkbox" checked />
-                          <!--span=item['name']small=item['work']
-                          -->
-                        </label>
-                      </div></span></div>
-                  <!--a.opacity-75(href='#')--></a>
+              <li class="has-action-left has-action-right message-list__users">
+              		<a href="#m0" data-message-id="0" data-type="checkbox" class="visible">
+	                  <div class="list-action-left"><img src="img/avatar_user6.jpg" alt="Арслан Мубаряков" class="face-radius"/></div>
+	                  <div class="list-content"><span class="title">Зайтуна Насретдинова</span><span class="caption">ООО «Универсалстрой»</span></div>
+										<div class="list-action-right">
+											<span class="top"> 
+	                    <div class="checkbox checkbox-styled tile-text">
+	                      <label>
+	                        <input type="checkbox"><span></span>
+	                        <!--span=item['name']small=item['work']
+	                        -->
+	                      </label>
+	                    </div></span>
+	                  </div>
+                  </a>
                 <div class="contain-xs pull-left"></div>
               </li>
               <!-- end .col-->
-              <li class="has-action-left has-action-right message-list__users"><a href="#m1" data-message-id="1" data-type="checkbox" class="visible">
-                  <div class="list-action-left"><img src="/img/avatar8.jpg" alt="Зайтуна Настретдинова" class="face-radius"/></div>
-                  <div class="list-content"><span class="title">Зайтуна Настретдинова</span><span class="caption">Менеджер по снабжению</span></div>
-                  <div class="list-action-right"><span class="top"> 
-                      <div class="checkbox checkbox-styled tile-text">
-                        <label>
-                          <input type="checkbox"/>
-                          <!--span=item['name']small=item['work']
-                          -->
-                        </label>
-                      </div></span></div>
-                  <!--a.opacity-75(href='#')--></a>
-                <div class="contain-xs pull-left"></div>
-              </li>
-            </ul>
-           <ul class="list-material message-list" id="list_u">
-              <li class="has-action-left has-action-right message-list__users"><a href="#m0" data-message-id="0" data-type="checkbox" class="visible">
-                  <div class="list-action-left"><img src="/img/avatar6.jpg" alt="Арслан Мубаряков" class="face-radius"/></div>
-                  <div class="list-content"><span class="title">Арслан Мубаряков</span><span class="caption">ООО «Универсалстрой»</span></div>
-                  <div class="list-action-right"><span class="top"> 
-                      <div class="checkbox checkbox-styled tile-text">
-                        <label>
-                          <input type="checkbox" checked />
-                          <!--span=item['name']small=item['work']
-                          -->
-                        </label>
-                      </div></span></div>
-                  <!--a.opacity-75(href='#')--></a>
-                <div class="contain-xs pull-left"></div>
-              </li>
-              <!-- end .col-->
-              <li class="has-action-left has-action-right message-list__users"><a href="#m1" data-message-id="1" data-type="checkbox" class="visible">
-                  <div class="list-action-left"><img src="/img/avatar8.jpg" alt="Зайтуна Настретдинова" class="face-radius"/></div>
-                  <div class="list-content"><span class="title">Зайтуна Настретдинова</span><span class="caption">Менеджер по снабжению</span></div>
-                  <div class="list-action-right"><span class="top"> 
-                      <div class="checkbox checkbox-styled tile-text">
-                        <label>
-                          <input type="checkbox"/>
-                          <!--span=item['name']small=item['work']
-                          -->
-                        </label>
-                      </div></span></div>
-                  <!--a.opacity-75(href='#')--></a>
+              <li class="has-action-left has-action-right message-list__users">
+              		<a href="#m0" data-message-id="0" data-type="checkbox" class="visible">
+	                  <div class="list-action-left"><img src="img/avatar_user4.jpg" alt="Арслан Мубаряков" class="face-radius"/></div>
+	                  <div class="list-content"><span class="title">Арслан Мубаряков</span><span class="caption">ООО «Универсалстрой»</span></div>
+										<div class="list-action-right">
+											<span class="top"> 
+	                    <div class="checkbox checkbox-styled tile-text">
+	                      <label>
+	                        <input type="checkbox"><span></span>
+	                        <!--span=item['name']small=item['work']
+	                        -->
+	                      </label>
+	                    </div></span>
+	                  </div>
+                  </a>
                 <div class="contain-xs pull-left"></div>
               </li>
             </ul>
@@ -3387,12 +3362,24 @@ p._profile_userlist = function() {
 				  console.log(result);
 				  swal.resetDefaults()
 				  swal({
-				    title: 'All done!',
-				    html:
-				      'Your answers: <pre>' +
-				        JSON.stringify(result) +
-				      '</pre>',
-				    confirmButtonText: 'Lovely!',
+				    title: 'Заявка отправлена',
+				    //html:
+				    //  'Your answers: <pre>' +
+				    //    JSON.stringify(result) +
+				    //  '</pre>',
+				    html: `
+				               <ul class="list-material message-list" id="list_u">
+              <li class="has-action-left has-action-right message-list__users">
+              		<a href="#m0" data-message-id="0" data-type="checkbox" class="visible">
+	                  <div class="list-action-left"><img src="img/avatar_user4.jpg" alt="Арслан Мубаряков" class="face-radius"/></div>
+	                  <div class="list-content"><span class="title">Арслан Мубаряков</span><span class="caption">ООО «Универсалстрой»</span></div>
+                  </a>
+                <div class="contain-xs pull-left"></div>
+              </li>
+            </ul>
+            `,
+
+				    confirmButtonText: 'OK',
 				    showCancelButton: false
 				  });
 			  $('.modal').modal('hide');

@@ -7,7 +7,7 @@
     "start_date": "4/25/2011",
     "office": "Edinburgh",
     "extn": 5421,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Garrett Winters",
@@ -16,7 +16,7 @@
     "start_date": "7/25/2011",
     "office": "Tokyo",
     "extn": 8422,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Ashton Cox",
@@ -25,7 +25,7 @@
     "start_date": "1/12/2009",
     "office": "San Francisco",
     "extn": 1562,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Cedric Kelly",
@@ -34,7 +34,7 @@
     "start_date": "3/29/2012",
     "office": "Edinburgh",
     "extn": 6224,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Airi Satou",
@@ -43,7 +43,7 @@
     "start_date": "11/28/2008",
     "office": "Tokyo",
     "extn": 5407,
-    "pic": "/img/avatar0.jpg"
+    "pic": "img/avatar_user0.jpg"
   },
   {
     "name": "Brielle Williamson",
@@ -52,7 +52,7 @@
     "start_date": "12/2/2012",
     "office": "New York",
     "extn": 4804,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Herrod Chandler",
@@ -61,7 +61,7 @@
     "start_date": "8/6/2012",
     "office": "San Francisco",
     "extn": 9608,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Rhona Davidson",
@@ -70,7 +70,7 @@
     "start_date": "10/14/2010",
     "office": "Tokyo",
     "extn": 6200,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Colleen Hurst",
@@ -79,7 +79,7 @@
     "start_date": "9/15/2009",
     "office": "San Francisco",
     "extn": 2360,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Sonya Frost",
@@ -88,7 +88,7 @@
     "start_date": "12/13/2008",
     "office": "Edinburgh",
     "extn": 1667,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Jena Gaines",
@@ -97,7 +97,7 @@
     "start_date": "12/19/2008",
     "office": "London",
     "extn": 3814,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Quinn Flynn",
@@ -106,7 +106,7 @@
     "start_date": "3/3/2013",
     "office": "Edinburgh",
     "extn": 9497,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Charde Marshall",
@@ -115,7 +115,7 @@
     "start_date": "10/16/2008",
     "office": "San Francisco",
     "extn": 6741,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Haley Kennedy",
@@ -124,7 +124,7 @@
     "start_date": "12/18/2012",
     "office": "London",
     "extn": 3597,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Tatyana Fitzpatrick",
@@ -133,7 +133,7 @@
     "start_date": "3/17/2010",
     "office": "London",
     "extn": 1965,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Michael Silva",
@@ -142,7 +142,7 @@
     "start_date": "11/27/2012",
     "office": "London",
     "extn": 1581,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Paul Byrd",
@@ -151,7 +151,7 @@
     "start_date": "6/9/2010",
     "office": "New York",
     "extn": 3059,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Gloria Little",
@@ -160,7 +160,7 @@
     "start_date": "4/10/2009",
     "office": "New York",
     "extn": 1721,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Bradley Greer",
@@ -169,7 +169,7 @@
     "start_date": "10/13/2012",
     "office": "London",
     "extn": 2558,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Dai Rios",
@@ -178,7 +178,7 @@
     "start_date": "9/26/2012",
     "office": "Edinburgh",
     "extn": 2290,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Jenette Caldwell",
@@ -187,7 +187,7 @@
     "start_date": "9/3/2011",
     "office": "New York",
     "extn": 1937,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Yuri Berry",
@@ -196,7 +196,7 @@
     "start_date": "6/25/2009",
     "office": "New York",
     "extn": 6154,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Caesar Vance",
@@ -205,7 +205,7 @@
     "start_date": "12/12/2011",
     "office": "New York",
     "extn": 8330,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Doris Wilder",
@@ -214,7 +214,7 @@
     "start_date": "9/20/2010",
     "office": "Sidney",
     "extn": 3023,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Angelica Ramos",
@@ -223,7 +223,7 @@
     "start_date": "10/9/2009",
     "office": "London",
     "extn": 5797,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Gavin Joyce",
@@ -232,7 +232,7 @@
     "start_date": "12/22/2010",
     "office": "Edinburgh",
     "extn": 8822,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Jennifer Chang",
@@ -241,7 +241,7 @@
     "start_date": "11/14/2010",
     "office": "Singapore",
     "extn": 9239,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Brenden Wagner",
@@ -250,7 +250,7 @@
     "start_date": "6/7/2011",
     "office": "San Francisco",
     "extn": 1314,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Fiona Green",
@@ -259,7 +259,7 @@
     "start_date": "3/11/2010",
     "office": "San Francisco",
     "extn": 2947,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Shou Itou",
@@ -268,7 +268,7 @@
     "start_date": "8/14/2011",
     "office": "Tokyo",
     "extn": 8899,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Michelle House",
@@ -277,7 +277,7 @@
     "start_date": "6/2/2011",
     "office": "Sidney",
     "extn": 2769,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Suki Burks",
@@ -286,7 +286,7 @@
     "start_date": "10/22/2009",
     "office": "London",
     "extn": 6832,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Prescott Bartlett",
@@ -295,7 +295,7 @@
     "start_date": "5/7/2011",
     "office": "London",
     "extn": 3606,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Gavin Cortez",
@@ -304,7 +304,7 @@
     "start_date": "10/26/2008",
     "office": "San Francisco",
     "extn": 2860,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Martena Mccray",
@@ -313,7 +313,7 @@
     "start_date": "3/9/2011",
     "office": "Edinburgh",
     "extn": 8240,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Unity Butler",
@@ -322,7 +322,7 @@
     "start_date": "12/9/2009",
     "office": "San Francisco",
     "extn": 5384,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Howard Hatfield",
@@ -331,7 +331,7 @@
     "start_date": "12/16/2008",
     "office": "San Francisco",
     "extn": 7031,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Hope Fuentes",
@@ -340,7 +340,7 @@
     "start_date": "2/12/2010",
     "office": "San Francisco",
     "extn": 6318,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Vivian Harrell",
@@ -349,7 +349,7 @@
     "start_date": "2/14/2009",
     "office": "San Francisco",
     "extn": 9422,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Timothy Mooney",
@@ -358,7 +358,7 @@
     "start_date": "12/11/2008",
     "office": "London",
     "extn": 7580,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Jackson Bradshaw",
@@ -367,7 +367,7 @@
     "start_date": "9/26/2008",
     "office": "New York",
     "extn": 1042,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Olivia Liang",
@@ -376,7 +376,7 @@
     "start_date": "2/3/2011",
     "office": "Singapore",
     "extn": 2120,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Bruno Nash",
@@ -385,7 +385,7 @@
     "start_date": "5/3/2011",
     "office": "London",
     "extn": 6222,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Sakura Yamamoto",
@@ -394,7 +394,7 @@
     "start_date": "8/19/2009",
     "office": "Tokyo",
     "extn": 9383,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Thor Walton",
@@ -403,7 +403,7 @@
     "start_date": "8/11/2013",
     "office": "New York",
     "extn": 8327,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Finn Camacho",
@@ -412,7 +412,7 @@
     "start_date": "7/7/2009",
     "office": "San Francisco",
     "extn": 2927,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Serge Baldwin",
@@ -421,7 +421,7 @@
     "start_date": "4/9/2012",
     "office": "Singapore",
     "extn": 8352,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Zenaida Frank",
@@ -430,7 +430,7 @@
     "start_date": "1/4/2010",
     "office": "New York",
     "extn": 7439,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Zorita Serrano",
@@ -439,7 +439,7 @@
     "start_date": "6/1/2012",
     "office": "San Francisco",
     "extn": 4389,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Jennifer Acosta",
@@ -448,7 +448,7 @@
     "start_date": "2/1/2013",
     "office": "Edinburgh",
     "extn": 3431,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Cara Stevens",
@@ -457,7 +457,7 @@
     "start_date": "12/6/2011",
     "office": "New York",
     "extn": 3990,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Hermione Butler",
@@ -466,7 +466,7 @@
     "start_date": "3/21/2011",
     "office": "London",
     "extn": 1016,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   },
   {
     "name": "Lael Greer",
@@ -475,7 +475,7 @@
     "start_date": "2/27/2009",
     "office": "London",
     "extn": 6733,
-    "pic": "/img/avatar3.jpg"
+    "pic": "img/avatar_user3.jpg"
   },
   {
     "name": "Jonas Alexander",
@@ -484,7 +484,7 @@
     "start_date": "7/14/2010",
     "office": "San Francisco",
     "extn": 8196,
-    "pic": "/img/avatar4.jpg"
+    "pic": "img/avatar_user4.jpg"
   },
   {
     "name": "Shad Decker",
@@ -493,7 +493,7 @@
     "start_date": "11/13/2008",
     "office": "Edinburgh",
     "extn": 6373,
-    "pic": "/img/avatar5.jpg"
+    "pic": "img/avatar_user5.jpg"
   },
   {
     "name": "Michael Bruce",
@@ -502,7 +502,7 @@
     "start_date": "6/27/2011",
     "office": "Singapore",
     "extn": 5384,
-    "pic": "/img/avatar1.jpg"
+    "pic": "img/avatar_user1.jpg"
   },
   {
     "name": "Donna Snider",
@@ -511,7 +511,7 @@
     "start_date": "1/25/2011",
     "office": "New York",
     "extn": 4226,
-    "pic": "/img/avatar2.jpg"
+    "pic": "img/avatar_user2.jpg"
   }
 ]
 }

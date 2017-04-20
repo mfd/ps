@@ -1,17 +1,17 @@
 @btn-danger-color :				@white
 @btn-danger-bg:					@brand-danger;
 @keyframes fadeIn {
-  /* line 59, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 60, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     opacity: 0;
   }
-  /* line 60, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 61, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     opacity: 1;
   }
 }
 @keyframes zoom-down {
-  /* line 88, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 89, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform-origin: top;
     -webkit-transform-origin: top center;
@@ -20,13 +20,13 @@
     -o-transform-origin: top center;
     transform: scale(0, 0);
   }
-  /* line 90, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 91, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: scale(1, 1);
   }
 }
 @keyframes zoom-up {
-  /* line 118, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform-origin: bottom;
     -webkit-transform-origin: bottom center;
@@ -35,13 +35,13 @@
     -o-transform-origin: bottom center;
     transform: scale(0, 0);
   }
-  /* line 120, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 121, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: scale(1, 1);
   }
 }
 @keyframes slide-right {
-  /* line 144, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 145, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform: translate(-20px, 0);
     -webkit-transform: translate(-20px, 0);
@@ -50,7 +50,7 @@
     -o-transform: translate(-20px, 0);
     opacity: 0;
   }
-  /* line 145, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 146, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -61,7 +61,7 @@
   }
 }
 @keyframes slide-left {
-  /* line 169, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 170, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform: translate(20px, 0);
     -webkit-transform: translate(20px, 0);
@@ -70,7 +70,7 @@
     -o-transform: translate(20px, 0);
     opacity: 0;
   }
-  /* line 170, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 171, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -81,7 +81,7 @@
   }
 }
 @keyframes slide-down {
-  /* line 194, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 195, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform: translate(0, -20px);
     -webkit-transform: translate(0, -20px);
@@ -90,7 +90,7 @@
     -o-transform: translate(0, -20px);
     opacity: 0;
   }
-  /* line 195, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 196, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -101,7 +101,7 @@
   }
 }
 @keyframes slide-up {
-  /* line 219, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 220, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   from {
     transform: translate(0, 20px);
     -webkit-transform: translate(0, 20px);
@@ -110,7 +110,7 @@
     -o-transform: translate(0, 20px);
     opacity: 0;
   }
-  /* line 220, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/animations.less */
+  /* line 221, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/animations.less */
   to {
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -162,13 +162,13 @@
 /* --=> MENUBAR */
 /* --=> MENUBAR END */
 /* --=> GUICONTROLS  */
-/* line 9, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 9, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls {
   font-size: 1.1em;
   padding: 0;
   margin-bottom: 30px;
 }
-/* line 15, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 15, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls small {
   display: block;
   margin: 30px 12px 12px 12px;
@@ -176,16 +176,16 @@
   font-weight: 500;
   opacity: 0.7;
 }
-/* line 22, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 22, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls small,
 .menubar-pin .gui-controls small {
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 29, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 29, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li:first-child > small {
   margin-top: 0;
 }
-/* line 35, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 35, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls .badge {
   position: absolute;
   top: 5px;
@@ -194,20 +194,20 @@
   padding: 2px 4px;
   font-size: 10px;
 }
-/* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li {
   list-style: none;
 }
-/* line 55, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 55, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li.gui-folder > a {
   cursor: pointer;
 }
-/* line 60, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 60, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li {
   position: relative;
   margin-bottom: 12px;
 }
-/* line 66, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 66, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > a {
   position: relative;
   display: block;
@@ -221,15 +221,15 @@
   min-width: 62px;
   z-index: 1;
 }
-/* line 50, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/buttons.less */
+/* line 50, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/buttons.less */
 .gui-controls > li > a.btn-flat {
   padding: 12px 0px;
 }
-/* line 76, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 76, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > a:focus {
   outline: none;
 }
-/* line 85, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 85, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li > a {
   position: relative;
   display: block;
@@ -240,29 +240,29 @@
   border-radius: 0;
   padding-left: 57px;
 }
-/* line 50, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_mixins/buttons.less */
+/* line 50, /Users/kkashaev/work/plussell/src/css/less/gsnab_mixins/buttons.less */
 .gui-controls > li ul > li > a.btn-flat {
   padding: 7px 8.5px;
 }
-/* line 92, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 92, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li > a:active,
 .gui-controls > li ul > li > a.active {
   background-color: #FFFFFF;
 }
-/* line 95, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 95, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li > a:hover,
 .gui-controls > li ul > li > a:focus {
   background-color: rgba(0, 0, 0, 0.07);
 }
-/* line 104, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 104, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls.nav > li > a:hover {
   background: inherit;
 }
-/* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-item-markup .gui-controls > li:not(.gui-folder) > a:hover {
   background-color: rgba(0, 0, 0, 0.07);
 }
-/* line 119, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-item-markup .gui-controls > li.active:not(.gui-folder) > a {
   background-color: #FFFFFF;
   transition: background 0.3s linear;
@@ -271,11 +271,11 @@
   -ms-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
 }
-/* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li:not(.gui-folder) > a:hover {
   background-color: rgba(0, 0, 0, 0.07);
 }
-/* line 119, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li.active:not(.gui-folder) > a {
   background-color: #FFFFFF;
   transition: background 0.3s linear;
@@ -284,77 +284,77 @@
   -ms-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
 }
-/* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li > a:hover,
 .menubar-visible .menubar-inverse .gui-controls > li > a:active {
   background-color: #005076;
 }
-/* line 58, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 58, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li.active > a {
   background-color: #00ccff;
 }
-/* line 137, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 137, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li ul {
   padding: 0;
   display: none;
 }
-/* line 141, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 141, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li.expanded > ul {
   display: block;
 }
-/* line 150, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 150, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul li:before {
   left: 51px;
 }
-/* line 151, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 151, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul a {
   padding-left: 78px;
 }
-/* line 153, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 153, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul a:before {
   left: 51px;
 }
-/* line 157, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 157, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul li:before {
   left: 72px;
 }
-/* line 158, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 158, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul a {
   padding-left: 99px;
 }
-/* line 160, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 160, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul a:before {
   left: 72px;
 }
-/* line 164, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 164, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul li:before {
   left: 93px;
 }
-/* line 165, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 165, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul a {
   padding-left: 120px;
 }
-/* line 167, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 167, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul a:before {
   left: 93px;
 }
-/* line 171, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 171, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul > li > ul li:before {
   left: 114px;
 }
-/* line 172, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 172, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul > li > ul a {
   padding-left: 141px;
 }
-/* line 174, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 174, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > ul > li > ul > li > ul > li > ul > li > ul a:before {
   left: 114px;
 }
-/* line 186, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 186, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li {
   position: relative;
 }
-/* line 190, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 190, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li:before {
   content: "";
   left: 30px;
@@ -366,16 +366,16 @@
   border-left: 1px dashed rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-/* line 199, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 199, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li:first-child:before {
   top: 0;
 }
-/* line 202, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 202, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li:last-child:before,
 .gui-controls > li ul > li.last-child:before {
   display: none;
 }
-/* line 206, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 206, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li ul > li > a:before {
   content: "";
   left: 30px;
@@ -386,7 +386,7 @@
   border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-/* line 227, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 227, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li .title {
   position: relative;
   left: -10px;
@@ -405,40 +405,40 @@
   -ms-transition: all 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
   -o-transition: all 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
 }
-/* line 241, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 241, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li > a:hover .title {
   color: #000000;
 }
-/* line 246, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 246, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li.active > a .title {
   color: #FFFFFF;
   font-weight: 500;
 }
-/* line 254, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 254, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li.gui-folder > a .title {
   font-style: normal;
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 262, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 262, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls li.gui-folder.expanded > a .title,
 .gui-controls li.gui-folder.active > a .title {
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 269, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 269, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > li > a .title {
   margin-left: 57px;
 }
-/* line 280, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 280, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-title .gui-controls li .title {
   left: 0;
   opacity: 1;
 }
-/* line 280, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 280, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls li .title {
   left: 0;
   opacity: 1;
 }
-/* line 297, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 297, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-folder > a:after {
   content: "+";
   position: absolute;
@@ -461,7 +461,7 @@
   -ms-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
 }
-/* line 312, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 312, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-folder.expanding > a:after,
 .gui-folder.expanded > a:after {
   font-size: 16px;
@@ -479,12 +479,12 @@
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
 }
-/* line 326, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 326, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > .gui-folder > a:after {
   top: 16px;
   margin-left: 2px;
 }
-/* line 330, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 330, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls > .gui-folder.expanding > a:after,
 .gui-controls > .gui-folder.expanded > a:after {
   color: rgba(0, 0, 0, 0.4);
@@ -495,15 +495,15 @@
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-/* line 340, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 340, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-sign .gui-folder > a:after {
   opacity: 1;
 }
-/* line 340, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 340, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-folder > a:after {
   opacity: 1;
 }
-/* line 354, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 354, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-icon {
   position: absolute;
   left: 12px;
@@ -520,7 +520,7 @@
   -ms-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
 }
-/* line 366, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 366, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-icon .fa:first-child,
 .gui-icon .zmdi:first-child,
 .gui-icon .glyphicon:first-child,
@@ -534,19 +534,19 @@
   line-height: 50px;
   width: 1em;
 }
-/* line 375, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 375, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-icon:hover {
   background-color: rgba(0, 0, 0, 0.07);
   color: #313435;
 }
-/* line 379, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 379, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-icon:hover img {
   left: -5px;
   top: -5px;
   width: 60px;
   height: 60px;
 }
-/* line 389, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 389, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls a.expanded .gui-icon,
 .gui-controls li.active .gui-icon,
 .gui-controls li.active .gui-icon:hover {
@@ -554,49 +554,49 @@
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
-/* line 396, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 396, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-icon-active {
   background-color: #00ccff;
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
-/* line 406, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 406, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-icon .gui-folder:hover:not(.active) .gui-icon {
   color: #313435;
 }
-/* line 412, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 412, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-icon .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 417, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 417, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .expanded-menu-icon .gui-icon:hover {
   background: inherit;
 }
-/* line 406, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 406, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-folder:hover:not(.active) .gui-icon {
   color: #313435;
 }
-/* line 412, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 412, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 417, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 417, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-icon:hover {
   background: inherit;
 }
-/* line 176, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 176, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
   color: #FFFFFF;
 }
-/* line 182, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 182, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 187, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 187, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-icon:hover {
   background: inherit;
 }
-/* line 430, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 430, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .gui-controls a.blink .gui-icon {
   animation: normal 1.4s 4 blink cubic-bezier(0.9, 0, 0.1, 1);
   animation: normal 1.4s 4 blink cubic-bezier(0.9, 0, 0.1, 1) 1s ease-in;
@@ -605,7 +605,7 @@
   -ms-animation: normal 1.4s 4 blink cubic-bezier(0.9, 0, 0.1, 1) 300ms 0 ease;
 }
 @keyframes blink {
-  /* line 444, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 444, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   50% {
     background-color: #00ccff;
     border-color: #FFFFFF;
@@ -613,11 +613,11 @@
   }
 }
 @media (min-width: 1200px) {
-  /* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li:not(.gui-folder) > a:hover {
     background-color: rgba(0, 0, 0, 0.07);
   }
-  /* line 119, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li.active:not(.gui-folder) > a {
     background-color: #FFFFFF;
     transition: background 0.3s linear;
@@ -626,78 +626,78 @@
     -ms-transition: background 0.3s linear;
     -o-transition: background 0.3s linear;
   }
-  /* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li > a:hover,
   .menubar-pin .menubar-inverse .gui-controls > li > a:active {
     background-color: #005076;
   }
-  /* line 58, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 58, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li.active > a {
     background-color: #00ccff;
   }
-  /* line 280, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 280, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls li .title {
     left: 0;
     opacity: 1;
   }
-  /* line 340, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 340, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-folder > a:after {
     opacity: 1;
   }
-  /* line 406, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 406, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-folder:hover:not(.active) .gui-icon {
     color: #313435;
   }
-  /* line 412, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 412, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li:not(.gui-folder) .gui-icon:hover {
     background: inherit;
   }
-  /* line 417, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 417, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-icon:hover {
     background: inherit;
   }
-  /* line 176, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 176, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
     color: #FFFFFF;
   }
-  /* line 182, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 182, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li:not(.gui-folder) .gui-icon:hover {
     background: inherit;
   }
-  /* line 187, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 187, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-icon:hover {
     background: inherit;
   }
 }
-/* line 12, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 12, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls small,
 .menubar-pin .menubar-inverse .gui-controls small {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 34, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 34, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls > li ul > li > a:active,
 .menubar-inverse .gui-controls > li ul > li > a.active {
   background-color: rgba(0, 204, 255, 0.1);
 }
-/* line 37, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 37, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls > li ul > li > a:hover,
 .menubar-inverse .gui-controls > li ul > li > a:focus {
   background-color: #005076;
 }
-/* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .expanded-menu-item-markup .menubar-inverse .gui-controls > li > a:hover,
 .expanded-menu-item-markup .menubar-inverse .gui-controls > li > a:active {
   background-color: #005076;
 }
-/* line 58, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 58, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .expanded-menu-item-markup .menubar-inverse .gui-controls > li.active > a {
   background-color: #00ccff;
 }
-/* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li:not(.gui-folder) > a:hover {
   background-color: rgba(0, 0, 0, 0.07);
 }
-/* line 119, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li.active:not(.gui-folder) > a {
   background-color: #FFFFFF;
   transition: background 0.3s linear;
@@ -706,63 +706,63 @@
   -ms-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
 }
-/* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li > a:hover,
 .menubar-visible .menubar-inverse .gui-controls > li > a:active {
   background-color: #005076;
 }
-/* line 58, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 58, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li.active > a {
   background-color: #00ccff;
 }
-/* line 79, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 79, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls > li ul > li:before {
   border-left: 1px dashed rgba(255, 255, 255, 0.3);
 }
-/* line 82, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 82, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls > li ul > li > a:before {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
-/* line 97, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 97, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls li .title {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 102, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 102, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls li > a:hover .title {
   color: #FFFFFF;
 }
-/* line 107, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 107, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls li.active > a .title {
   color: #FFFFFF;
 }
-/* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls li.gui-folder > a .title {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 120, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 120, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls li.gui-folder.expanded > a .title,
 .menubar-inverse .gui-controls li.gui-folder.active > a .title {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 132, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 132, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-folder > a:after {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 140, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 140, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls > .gui-folder.expanding > a:after,
 .menubar-inverse .gui-controls > .gui-folder.expanded > a:after {
   color: rgba(255, 255, 255, 0.4);
 }
-/* line 150, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 150, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-icon {
   color: rgba(255, 255, 255, 0.95);
 }
-/* line 153, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 153, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-icon:hover {
   background-color: rgba(255, 255, 255, 0.12);
   color: #FFFFFF;
 }
-/* line 160, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 160, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-controls a.expanded .gui-icon,
 .menubar-inverse .gui-controls li.active .gui-icon,
 .menubar-inverse .gui-controls li.active .gui-icon:hover {
@@ -770,54 +770,54 @@
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
-/* line 167, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 167, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-inverse .gui-icon-active {
   background-color: #00ccff;
   border-color: #FFFFFF;
   color: red;
 }
-/* line 176, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 176, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .expanded-menu-icon .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
   color: #FFFFFF;
 }
-/* line 182, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 182, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .expanded-menu-icon .menubar-inverse .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 187, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 187, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .expanded-menu-icon .menubar-inverse .gui-icon:hover {
   background: inherit;
 }
-/* line 406, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 406, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-folder:hover:not(.active) .gui-icon {
   color: #313435;
 }
-/* line 412, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 412, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 417, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+/* line 417, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
 .menubar-visible .gui-icon:hover {
   background: inherit;
 }
-/* line 176, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 176, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
   color: #FFFFFF;
 }
-/* line 182, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 182, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-controls > li:not(.gui-folder) .gui-icon:hover {
   background: inherit;
 }
-/* line 187, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+/* line 187, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
 .menubar-visible .menubar-inverse .gui-icon:hover {
   background: inherit;
 }
 @media (min-width: 1200px) {
-  /* line 114, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 114, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li:not(.gui-folder) > a:hover {
     background-color: rgba(0, 0, 0, 0.07);
   }
-  /* line 119, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 119, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li.active:not(.gui-folder) > a {
     background-color: #FFFFFF;
     transition: background 0.3s linear;
@@ -826,36 +826,36 @@
     -ms-transition: background 0.3s linear;
     -o-transition: background 0.3s linear;
   }
-  /* line 51, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 51, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li > a:hover,
   .menubar-pin .menubar-inverse .gui-controls > li > a:active {
     background-color: #005076;
   }
-  /* line 58, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 58, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li.active > a {
     background-color: #00ccff;
   }
-  /* line 406, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 406, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-folder:hover:not(.active) .gui-icon {
     color: #313435;
   }
-  /* line 412, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 412, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-controls > li:not(.gui-folder) .gui-icon:hover {
     background: inherit;
   }
-  /* line 417, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls.less */
+  /* line 417, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls.less */
   .menubar-pin .gui-icon:hover {
     background: inherit;
   }
-  /* line 176, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 176, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
     color: #FFFFFF;
   }
-  /* line 182, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 182, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-controls > li:not(.gui-folder) .gui-icon:hover {
     background: inherit;
   }
-  /* line 187, /Users/kamilkashaev/Dropbox/work/glavsnab/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
+  /* line 187, /Users/kkashaev/work/plussell/src/css/less/gsnab_theme/gui-controls-inverse.less */
   .menubar-pin .menubar-inverse .gui-icon:hover {
     background: inherit;
   }

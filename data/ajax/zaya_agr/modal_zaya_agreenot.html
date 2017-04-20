@@ -1,35 +1,43 @@
 
+<!-- role => 'customer', 'supplier', 'agr'-->
+<!-- all.json-->
+<!-- statuses {} => app__statuses_customer, app__statuses_supplier, app__statuses_agr-->
+<!-- Фильтры-->
+<!-- Список заявок-->
+<!-- Заявки => метки-->
+<!-- СОТРУДНИКИ-->
 <div class="modal-dialog zayavka">
   <div class="modal-content">
-    <div class="modal-header style-p_inwork"><a data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-original-title="Закрыть заявку" class="btn btn-icon-toggle btn-close ink-reaction"><i class="zmdi zmdi-close"></i></a><a href="#" data-toggle="dropdown" class="btn btn-icon-toggle dropdown-toggle btn-actions"><i class="fa fa-bars"></i></a>
+    <div class="modal-header zayavka"><a data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" data-placement="left" data-original-title="Закрыть заявку" class="btn btn-icon-toggle btn-close ink-reaction"><i class="zmdi zmdi-close"></i></a><a href="#" data-toggle="dropdown" class="btn btn-icon-toggle dropdown-toggle btn-actions"><i class="fa fa-bars"></i></a>
       <ul role="menu" class="dropdown-menu dropdown-menu-right animation-dock">
         <li><a href="#">Редактировать заявку</a></li>
         <li><a href="#">Удалить заявку</a></li>
         <li><a href="#">Отозвать заявку</a></li>
       </ul>
-      <header>В работе</header>
+      <header>Согласование заявки</header>
     </div>
-    <div class="modal-body style-p_inwork">
+    <div class="modal-body zayavka">
       <div class="row">
         <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
           <h3>Поставка складского оборудования для цеха 120 БИС для нужд ОАО «Научно-производственная корпорация «Уралвагонзавод»</h3>
           <ul class="st text-default-light">
-            <li>От кого:  <span class="badge style-primary-light">АО "Уралэлектромедь"</span></li>
-            <li>Статус: <span class="badge style-p_inwork">В работе</span></li>
+            <li>От кого: Константиновский Альберт Мансурович <span class="badge style-primary-light">АО "Уралэлектромедь"</span></li>
+            <li>Статус: <span class="badge">Согласование</span></li>
             <li>Номер заявки №: <span class="badge">PS-12123123123</span></li>
             <li>Срок окончания приема заявок: <span class="badge style-accent-light">25/12/2016</span></li>
           </ul>
           <div class="zaya-desc">
             <ul data-toggle="tabs" class="nav nav-tabs">
               <li><a href="#first">Описание</a></li>
-              <li class="active"><a href="#second">Предложения <span class="badge style-accent-bright">42</span></a></li>
+              <li class="active"><a href="#second">Конкуретный лист<span class="badge style-accent-bright">42</span></a></li>
               <li><a href="#third">Документы</a></li>
+              <li><a href="#log">История изменений</a></li>
             </ul>
             <div class="tab-content">
-              <div id="first" class="tab-pane">
+              <div id="first" class="tab-pane fade">
                 <dl class="dl-horizontal">
                   <dt>Статус:</dt>
-                  <dd><span class="badge style-formir">Формирование</span></dd>
+                  <dd><span class="badge">Согласование</span></dd>
                   <dt>Участники:</dt>
                   <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
                 </dl>
@@ -38,291 +46,28 @@
                 <div class="visible-xs text-center"><a href="#">
                     <h3>Посмотреть список предложений</h3></a></div>
                 <div class="hidden-xs offers table-responsive">
-                  <table id="offers_postav" data-source="data/data2.json" class="table order-column hover table-striped">
+                  <table id="offers_list2_inwork" data-source="data/data2.json" class="table order-column hover table-striped">
                     <thead>
                       <tr>
                         <th class="t_idx"></th>
                         <th class="t_name">Наименование товара или услуги</th>
                         <th class="t_unit">Ед. изм</th>
                         <th class="t_qnt">Кол-во</th>
-                        <th class="t_suppl"><b>ООО "УралКомплект ГМБХ" </b><i class="fa fa-check-square text-success"></i></th>
+                        <th class="t_suppl"> <b>ООО "УралКомплект ГМБХ"</b><i class="fa fa-check-square text-success"></i></th>
+                        <th class="t_suppl"><b>ООО "Империя Поставки"</b><i class="fa fa-refresh text-warning"></i></th>
+                        <th class="t_suppl"><b>ОО "Империя Поставки" </b><i class="fa fa-times text-danger"></i></th>
+                        <th class="t_suppl"><b>ООО "Империя Поставки" </b><i class="fa fa-check-square text-success"></i></th>
                       </tr>
                     </thead>
                   </table>
                 </div>
                 <!-- end .table-responsive-->
-                <div class="hidden-xs offers table-responsive">
-                  <table id="postconditions" class="table order-column hover table-striped no-margin">
-                    <thead>
-                      <tr>
-                        <th>n</th>
-                        <th>p</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="t_name">Срок поставки</td>
-                        <td class="t_unit">осрочка 30 дней    </td>
-                      </tr>
-                      <tr>
-                        <td class="t_name">Условия оплаты</td>
-                        <th class="t_unit">самовываоз    </th>
-                      </tr>
-                      <tr>
-                        <td class="t_name">Срок поставки, дней</td>
-                        <td class="t_unit">14    </td>
-                      </tr>
-                      <tr>
-                        <td class="t_name">Условия поставки</td>
-                        <td class="t_unit">3 дня</td>
-                      </tr>
-                      <tr>
-                        <td class="t_name">Наличие разрешений</td>
-                        <td class="t_unit">нет   </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
-              <div id="third" class="tab-pane">
+              <div id="third" class="tab-pane fade">
                 <div class="docs docs-underlined height-8 scroll auto-width">
                   <div class="col-xs-12 col-md-6">
                     <p class="clearfix">
                       <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
                       <div class="file-name"> <a href="#">Реквизиты</a>
                         <ul class="list-inline">
                           <li>10.1MB</li>
@@ -545,201 +290,6 @@
                     <p class="clearfix">
                       <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
                       <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
                         <ul class="list-inline">
                           <li>10.1MB</li>
                           <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
@@ -1025,6 +575,45 @@
                   <div class="col-xs-12 col-md-6">
                     <p class="clearfix">
                       <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
                       <div class="file-name"> <a href="#">Реквизиты</a>
                         <ul class="list-inline">
                           <li>10.1MB</li>
@@ -1052,6 +641,1098 @@
                     <p class="clearfix">
                       <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
                       <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Реквизиты</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
+                        <ul class="list-inline">
+                          <li>10.1MB</li>
+                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
+                          <li><i class="fa fa-eye"></i> 402</li>
+                          <li><i class="fa fa-cloud-download"></i> 3</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="clearfix">
+                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
+                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
                         <ul class="list-inline">
                           <li>10.1MB</li>
                           <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
@@ -1286,708 +1967,6 @@
                     <p class="clearfix">
                       <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
                       <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Реквизиты</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-word-o word"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-excel-o excel"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
-                        <ul class="list-inline">
-                          <li>10.1MB</li>
-                          <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
-                          <li><i class="fa fa-eye"></i> 402</li>
-                          <li><i class="fa fa-cloud-download"></i> 3</li>
-                        </ul>
-                      </div>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <p class="clearfix">
-                      <div class="file-icon"><i class="fa fa-file-pdf-o pdf"></i></div>
-                      <div class="file-name"> <a href="#">Закупочная спецификация</a>
                         <ul class="list-inline">
                           <li>10.1MB</li>
                           <li><i class="fa fa-calendar-o"></i> 08.17.2014</li>
@@ -1998,13 +1977,20 @@
                     </p>
                   </div>
                 </div>
+                <!-- end .docs-results-->
+              </div>
+              <div id="suppl" class="tab-pane fade">
+                <p>Список поставщиков</p>
+              </div>
+              <div id="log" class="tab-pane fade">
+                <p>История изменений</p>
               </div>
             </div>
             <!-- end .tab-content-->
           </div>
           <!-- end .zaya-desc-->
         </div>
-        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 zaya_actions_btn"><a data-msg="Ваши обновленные предложения по ценам отправлены!" data-style="success" class="btn btn-lbls btn-lbls__hrz disabled btn__zaya"><i class="gsnab gsnab-141958"></i>Отправить обновленные предложения</a></div>
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 zaya_actions_btn"><a id="zaya_agreeyes" class="btn btn-lbls btn-lbls__hrz"><i class="fa fa-thumbs-up"></i>Согласовать</a><a id="zaya_agreeno" class="btn btn-lbls btn-lbls__hrz"><i class="fa fa-thumbs-down"></i>Отклонить</a><a id="zaya_agreefreeze" class="btn btn-lbls btn-lbls__hrz"><i class="fa fa-snowflake-o"></i>Заморозить</a></div>
       </div>
       <!-- .row-->
     </div>
